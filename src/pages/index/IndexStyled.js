@@ -13,7 +13,7 @@ font-family: 'Barlow', sans-serif
 `
 
 export const SubContainer = styled.div`
-height: 30%;
+height: 30vh;
 width: 100%;
 background-color: #1b1919;
 display: flex;
@@ -31,7 +31,7 @@ p{
 input{
     margin: 0;
     width: 80%;
-    height: 4vh;
+    height: 9vw;
     font-size: 18px;
     background-color: #1b1919;
     border: 1px solid #fff;
@@ -47,7 +47,7 @@ button{
     color: #fff;
     background-color: #1b1919;
     border: 1px solid #fff;
-    height: 5vh;
+    height: 11vw;
     width: 40%;
     :active{
         background-color: #fe692a;

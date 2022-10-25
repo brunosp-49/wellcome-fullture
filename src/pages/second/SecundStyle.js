@@ -5,7 +5,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-height: 100vh;
+min-height: 100vh;
 background-size: cover;
 background-position: center;
 font-family: 'Barlow', sans-serif;
