@@ -18,7 +18,7 @@ export default function Second() {
           color: "#fe692a",
           border: "1px solid #fe692a",
           padding: "10px",
-          marginBottom: "-4vh",
+          marginBottom: "-1vh",
         }}
       >
         Brinque com os códigos
