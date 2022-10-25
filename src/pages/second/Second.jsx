@@ -157,6 +157,7 @@ export default function Second() {
               justifyContent: "end",
               display: "flex",
               width: "100%",
+              height: "20%",
             }}
           >
             <RiCloseFill
@@ -168,12 +169,11 @@ export default function Second() {
           </div>
           <div
             style={{
-              height: "34vw",
+              minHeight: "50%",
               width: "95%",
               display: "flex",
               justifyContent: "center",
               alignItems: "flex-end",
-              paddingTop: "5px"
             }}
           >
             <p>
