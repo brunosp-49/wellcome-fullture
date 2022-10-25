@@ -24,6 +24,7 @@ input{
     max-width: 80vw;
     min-height: 10vh;
     color: #fff;
+    padding-left: 10px;
 }
 .subContainer{
     display: flex;
@@ -41,6 +42,7 @@ input{
     align-items: center;
     background-color: #fff;
     width: 80vw - 3px;
+    min-width: 80vw;
     min-height: 10vh;
     font-weight: 500;
     color: #515151;
