@@ -13,7 +13,7 @@ font-family: 'Barlow', sans-serif
 `
 
 export const SubContainer = styled.div`
-height: 30vh;
+height: 65vw;
 width: 100%;
 background-color: #1b1919;
 display: flex;
