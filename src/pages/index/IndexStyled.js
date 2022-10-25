@@ -8,7 +8,7 @@ align-items: center;
 height: 100vh;
 background-image: url("https://www.fullture.com/wp-content/uploads/2020/07/topo-fullture.png");
 background-size: cover;
-background-position: center;
+background-position: right;
 font-family: 'Barlow', sans-serif
 `
 
