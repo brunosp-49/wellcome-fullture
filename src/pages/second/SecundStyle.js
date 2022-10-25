@@ -66,10 +66,9 @@ justify-content: center;
 align-self: center;
 justify-self: center;
 background-color: #515151;
-height: 40vw;
+min-height: 40vw;
 width: 90vw;
 padding: 2vw;
-padding-top: 4vw;
 text-align: center;
 p{
     font-size: 18px;

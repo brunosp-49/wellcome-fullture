@@ -18,7 +18,7 @@ const Emoji = React.memo(({ className, label, symbol }) => (
 export default function Second() {
   const [color, setColor] = useState("#1b1919");
   const { name } = useParams();
-  const [isTheModalOpen, setIsTheModalOpen] = useState(true);
+  const [isTheModalOpen, setIsTheModalOpen] = useState(false);
 
   return (
     <MainContainer style={{ backgroundColor: `${color}` }}>
