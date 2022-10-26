@@ -54,7 +54,7 @@ export default function Second() {
           style={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-evenly",
+            justifyContent: "center",
             alignItems: "center",
             width: "80vw",
             height: "20vw",
@@ -66,16 +66,19 @@ export default function Second() {
               color: "#fe692a",
               border: "1px solid #fe692a",
               padding: "10px",
+              zIndex: 1,
             }}
           >
             Mude a cor do background
           </h3>
-          <AiOutlineInfoCircle
-            className="icon"
-            color="#fe692a"
-            fontSize={25}
-            onClick={() => setIsTheModalOpen(true)}
-          />
+          <div style={{ zIndex: 2, display: "flex",position: "absolute", alignItems: "center", justifyContent: "flex-end", width: "80%" }}>
+            <AiOutlineInfoCircle
+              className="icon"
+              color="#fe692a"
+              fontSize={25}
+              onClick={() => setIsTheModalOpen(true)}
+            />
+          </div>
         </div>
         <div className="container" id="containerColor">
           <p>
@@ -100,25 +103,14 @@ export default function Second() {
           </p>
         </div>
       </div>
-      <div
-        className="container"
-        style={{ marginBottom: "10%" }}
-        id="containerColor"
-      >
-        <p>
-          <span style={{ color: "#d0949e" }}>
-            {`<div>`}
-            <br />
-          </span>
-          <span style={{ color: "#c5c8c6" }}>
-            <strong> {name}</strong> <br />
-            isso é só o início, venha viver o mundo fullture{" "}
-            <Emoji symbol={"0x1F47E"} />
-            <Emoji symbol={"0x1F389"} />
-            <br />
-          </span>
-          <span style={{ color: "#d0949e" }}>{` </div>`}</span>
-        </p>
+      <div className="subContainer" style={{ marginBottom: "10%" }}>
+        <LiveProvider
+          code={`<div className="preview"><strong> ${name} </strong> isso é só o início, venha viver o mundo fullture! XD </div>`}
+        >
+          <LiveEditor />
+          <LiveError />
+          <LivePreview />
+        </LiveProvider>
       </div>
       <img
         src="https://www.fullture.com/wp-content/uploads/2020/11/LogoFullture-White.svg"
@@ -137,16 +129,22 @@ export default function Second() {
         }}
       >
         <a href="https://www.facebook.com/fulltureschool" target="_blank">
-        <FaFacebookF fontSize={30} color="#fff"/>
+          <FaFacebookF fontSize={30} color="#fff" />
         </a>
         <a href="https://www.instagram.com/fulltureschool/" target="_blank">
-        <FaInstagram fontSize={30} color="#fff"/>
+          <FaInstagram fontSize={30} color="#fff" />
         </a>
-        <a href="https://www.youtube.com/channel/UCKKcnkhZv50ESUjRI0LuCug" target="_blank">
-        <FaYoutube fontSize={30} color="#fff"/>
+        <a
+          href="https://www.youtube.com/channel/UCKKcnkhZv50ESUjRI0LuCug"
+          target="_blank"
+        >
+          <FaYoutube fontSize={30} color="#fff" />
         </a>
-        <a href="https://www.linkedin.com/company/fulltureschool/" target="_blank">
-        <IoLogoLinkedin fontSize={30} color="#fff"/>
+        <a
+          href="https://www.linkedin.com/company/fulltureschool/"
+          target="_blank"
+        >
+          <IoLogoLinkedin fontSize={30} color="#fff" />
         </a>
       </div>
       {!isTheModalOpen ? null : (

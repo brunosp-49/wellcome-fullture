@@ -39,7 +39,7 @@ input{
     background-color: #515151;
     width: 80vw;
     min-height: 10vh;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .preview{
     display: flex;
@@ -71,6 +71,7 @@ height: 50vw;
 width: 90vw;
 padding: 2vw;
 text-align: center;
+z-index: 3;
 p{
     font-size: 18px;
     color: #fff;
