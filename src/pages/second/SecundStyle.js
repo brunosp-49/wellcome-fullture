@@ -9,6 +9,7 @@ min-height: 100vh;
 background-size: cover;
 background-position: center;
 font-family: 'Barlow', sans-serif;
+padding: 0 50px;
 .icon{
     :hover{
         cursor: pointer;
