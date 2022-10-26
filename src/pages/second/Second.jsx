@@ -71,7 +71,7 @@ export default function Second() {
           >
             Mude a cor do background
           </h3>
-          <div style={{ zIndex: 2, display: "flex",position: "absolute", alignItems: "center", justifyContent: "flex-end", width: "80%" }}>
+          <div style={{ zIndex: 2, display: "flex",position: "absolute", alignItems: "center", justifyContent: "flex-end", width: "85%" }}>
             <AiOutlineInfoCircle
               className="icon"
               color="#fe692a"
